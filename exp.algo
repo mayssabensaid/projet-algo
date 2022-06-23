@@ -1,0 +1,29 @@
+ALGORITHM check
+VAR
+    c := STRING
+    count : INTEGER := 0 ; 
+    i : INTEGER := 0; 
+    word : INTEGER := 0 ; 
+    nbvowels : INTEGER := 0;
+
+BEGIN
+ READ(c)
+    WHILE (c[i] <> '.' ) DO
+        if(c[i] <> ' ') THEN
+        count = count +1 ;
+        END_IF 
+        if(c[i] in ['a','e','u','i','o']) THEN
+        nbvowels = nbvowels +1 ; 
+        END_IF
+        if (c[i] = '') THEN 
+        word = word +1 ; 
+        END_IF
+        i = i+1 ; 
+    END_WHILE
+    WRITE(c)
+    WRITE ( count)
+    WRITE ( word)
+    WRITE ( nbvowels)
+
+    
+END
