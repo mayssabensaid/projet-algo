@@ -1,6 +1,6 @@
 ALGORITHM check
 VAR
-    c := STRING
+    c : STRING
     count : INTEGER := 0 ; 
     i : INTEGER := 0; 
     word : INTEGER := 0 ; 
